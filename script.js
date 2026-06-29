@@ -30,7 +30,7 @@ const translations = {
         contact_external_title: 'External website',
         contact_topics_title: 'Main themes',
         contact_topics_desc: 'Astroparticle physics, cosmology, astrobiology, and science education.',
-        research_eyebrow: 'Research page',
+        research_eyebrow: 'Research profile and topics',
         research_title: 'Research',
         research_description: 'Rafael’s work connects astrophysics, particle physics, and cosmology, with emphasis on how extreme cosmic environments reveal the origin and evolution of the universe.',
         research_topics_title: 'Main research topics',
@@ -52,7 +52,7 @@ const translations = {
         research_links_title: 'Further reading',
         research_links_desc: 'More detailed project pages and updates are available on the main academic website.',
         research_links_action: 'Visit the research archive',
-        teaching_eyebrow: 'Teaching page',
+        teaching_eyebrow: 'Teaching and education profile',
         teaching_title: 'Teaching',
         teaching_description: 'Rafael combines university teaching, supervision, and science communication, with a special interest in how physics and astronomy can be taught in formal and non-formal learning spaces.',
         teaching_courses_title: 'Course examples',
@@ -106,7 +106,7 @@ const translations = {
         contact_external_title: 'Site externo',
         contact_topics_title: 'Temas principais',
         contact_topics_desc: 'Astrofísica de partículas, cosmologia, astrobiologia e educação em ciências.',
-        research_eyebrow: 'Página de pesquisa',
+        research_eyebrow: 'Perfil e temas de pesquisa',
         research_title: 'Pesquisa',
         research_description: 'O trabalho de Rafael conecta astrofísica, física de partículas e cosmologia, com ênfase em como ambientes cósmicos extremos revelam a origem e a evolução do universo.',
         research_topics_title: 'Principais temas de pesquisa',
@@ -128,7 +128,7 @@ const translations = {
         research_links_title: 'Leitura complementar',
         research_links_desc: 'Páginas mais detalhadas de projetos e atualizações estão disponíveis no site acadêmico principal.',
         research_links_action: 'Visitar o arquivo de pesquisa',
-        teaching_eyebrow: 'Página de ensino',
+        teaching_eyebrow: 'Perfil de ensino e educação',
         teaching_title: 'Ensino',
         teaching_description: 'Rafael combina ensino universitário, orientação e comunicação científica, com interesse especial em como física e astronomia podem ser ensinadas em espaços formais e não formais de aprendizagem.',
         teaching_courses_title: 'Exemplos de cursos',
@@ -154,6 +154,7 @@ const translations = {
 };
 
 let currentLang = 'en';
+const NAVBAR_OFFSET = 84;
 
 function switchLanguage(lang) {
     if (!translations[lang]) {
@@ -227,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             event.preventDefault();
-            const offsetTop = target.getBoundingClientRect().top + window.scrollY - 84;
+            const offsetTop = target.getBoundingClientRect().top + window.scrollY - NAVBAR_OFFSET;
             window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         });
     });

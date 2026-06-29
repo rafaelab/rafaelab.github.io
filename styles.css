@@ -7,6 +7,9 @@
     --bg-color: #ffffff;
     --bg-light: #f8fafc;
     --bg-alt: #eef2ff;
+    --hero-gradient-start: #f8fafc;
+    --hero-gradient-mid: #eef2ff;
+    --hero-gradient-end: #dbeafe;
     --border-color: #e5e7eb;
     --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
     --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
@@ -135,7 +138,7 @@ main {
 
 .hero {
     padding: 120px 0 88px;
-    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 52%, #dbeafe 100%);
+    background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-mid) 52%, var(--hero-gradient-end) 100%);
 }
 
 .hero-inner {
