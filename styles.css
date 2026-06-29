@@ -33,6 +33,7 @@ body {
 	line-height: 1.6;
 	color: var(--text-color);
 	background: var(--bg-color);
+	background-image: radial-gradient(circle at top left, rgba(255, 238, 219, 0.75), transparent 34%), linear-gradient(180deg, rgba(255, 248, 240, 0.98), rgba(252, 247, 241, 1));
 }
 
 main {
@@ -62,10 +63,12 @@ main {
 	border: none;
 	background: transparent;
 	color: var(--text-color);
-	padding: 8px 14px;
+	padding: 8px 12px;
 	border-radius: 999px;
 	cursor: pointer;
 	font-weight: 700;
+	font-size: 1.05rem;
+	line-height: 1;
 	transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -149,7 +152,7 @@ main {
 
 .hero-layout {
 	display: grid;
-	grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.9fr);
+	grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.8fr);
 	gap: 2rem;
 	align-items: center;
 }
@@ -201,6 +204,10 @@ main {
 	max-width: 720px;
 }
 
+.description-secondary {
+	margin-top: 1rem;
+}
+
 .cta-buttons {
 	display: flex;
 	flex-wrap: wrap;
@@ -247,6 +254,17 @@ main {
 	color: #fff;
 }
 
+.btn-ghost {
+	background: rgba(255, 249, 242, 0.3);
+	border-color: rgba(61, 52, 45, 0.16);
+	color: var(--accent-color);
+}
+
+.btn-ghost:hover {
+	background: rgba(255, 249, 242, 0.76);
+	color: var(--accent-color);
+}
+
 .highlight-panel,
 .info-card,
 .feature-card,
@@ -256,6 +274,69 @@ main {
 	border: 1px solid rgba(220, 201, 182, 0.9);
 	border-radius: var(--radius);
 	box-shadow: var(--shadow);
+}
+
+.profile-sidebar {
+	display: grid;
+	gap: 1rem;
+}
+
+.profile-photo {
+	min-height: 420px;
+	border-radius: calc(var(--radius) + 10px);
+	background-image: linear-gradient(180deg, rgba(20, 18, 17, 0.08), rgba(20, 18, 17, 0.22)), url('profile-photo.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(220, 201, 182, 0.9);
+	box-shadow: var(--shadow-lg);
+	overflow: hidden;
+	position: relative;
+	background-color: #dcc2ac;
+	isolation: isolate;
+}
+
+.profile-photo::after {
+	content: 'Add profile-photo.jpg';
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+	padding: 0.45rem 0.7rem;
+	border-radius: 999px;
+	background: rgba(40, 35, 32, 0.72);
+	color: #fff;
+	font-size: 0.8rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	backdrop-filter: blur(6px);
+	z-index: -1;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+.profile-photo:hover::after,
+.profile-photo:focus-visible::after {
+	opacity: 1;
+	z-index: 1;
+}
+
+.profile-card {
+	padding: 1.5rem;
+	background: rgba(255, 249, 242, 0.9);
+	border: 1px solid rgba(220, 201, 182, 0.9);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	backdrop-filter: blur(6px);
+}
+
+.profile-card h2 {
+	color: var(--accent-color);
+	margin-bottom: 0.7rem;
+}
+
+.profile-card-name {
+	font-weight: 800;
+	color: var(--accent-color);
 }
 
 .highlight-panel {
@@ -357,6 +438,10 @@ main {
 	gap: 1rem;
 }
 
+.education-list {
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .timeline-meta {
 	font-weight: 700;
 	color: var(--primary-color);
@@ -368,6 +453,41 @@ main {
 	gap: 1.5rem;
 	grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
 	align-items: start;
+}
+
+.interests-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 1rem 1.25rem;
+}
+
+.interest-item {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0.8rem;
+	align-items: start;
+	padding: 1.2rem 1.25rem;
+	border-radius: var(--radius);
+	background: rgba(255, 250, 245, 0.9);
+	border: 1px solid rgba(220, 201, 182, 0.9);
+	box-shadow: var(--shadow);
+}
+
+.interest-bullet {
+	color: var(--primary-color);
+	font-weight: 800;
+	font-size: 1.15rem;
+	line-height: 1.4;
+}
+
+.interest-item p {
+	margin: 0;
+	color: var(--text-light);
+}
+
+.compact-contact-grid {
+	grid-template-columns: 1fr;
+	gap: 1rem;
 }
 
 .inline-link {
@@ -394,6 +514,10 @@ main {
 	.hero-layout,
 	.two-column-layout {
 		grid-template-columns: 1fr;
+	}
+
+	.profile-photo {
+		min-height: 360px;
 	}
 }
 
@@ -429,6 +553,11 @@ main {
 
 	.hero {
 		padding-top: 108px;
+	}
+
+	.profile-photo::after {
+		opacity: 1;
+		z-index: 1;
 	}
 }
 

@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Personal website of Rafael Alves Batista.">
-	<title>Rafael Alves Batista | Landing Page</title>
+	<meta name="description" content="Homepage of Rafael Alves Batista, with profile, education, and research interests.">
+	<title>Rafael Alves Batista | Home</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="home">
 	<div class="language-switcher">
-		<button class="lang-btn active" data-lang="en">EN</button>
-		<button class="lang-btn" data-lang="pt">PT</button>
+		<button class="lang-btn active" data-lang="en" aria-label="English">🇬🇧</button>
+		<button class="lang-btn" data-lang="pt" aria-label="Portuguese">🇧🇷</button>
 	</div>
 
 	<nav class="navbar">
@@ -36,22 +36,27 @@
 		<section class="hero hero-home">
 			<div class="container hero-layout">
 				<div class="hero-copy">
-					<p class="eyebrow" data-translate="home_eyebrow">Astroparticle physicist and educator</p>
+					<p class="eyebrow" data-translate="home_eyebrow">Homepage</p>
 					<h1 class="main-title" data-translate="home_title">Rafael Alves Batista</h1>
 					<p class="subtitle" data-translate="home_subtitle">Junior Professor Chair at the Institut d’Astrophysique de Paris, Sorbonne Université</p>
-					<p class="description" data-translate="home_description">Rafael works across astroparticle physics, cosmology, and science education, with research spanning multimessenger astronomy, cosmic magnetic fields, dark matter, and the conditions that make life possible in the universe.</p>
+					<p class="description" data-translate="home_description">I am currently a Junior Professor Chair at the Institut d’Astrophysique de Paris at the Sorbonne Université, in France.</p>
+					<p class="description description-secondary" data-translate="home_description_secondary">I was previously a “La Caixa” Junior Leader and Marie Curie Fellow at the Institute for Theoretical Physics at the Autonomous University of Madrid, and earlier held positions at Oxford, the University of São Paulo, and Radboud University Nijmegen.</p>
 					<div class="cta-buttons">
 						<a href="research.html" class="btn btn-primary" data-translate="home_cta_research">Explore research</a>
 						<a href="teaching.html" class="btn btn-secondary" data-translate="home_cta_teaching">View teaching</a>
+						<a href="https://www.8rafael.com/en/news/" class="btn btn-ghost" data-translate="home_cta_news">Current activities</a>
 					</div>
 				</div>
-				<aside class="highlight-panel">
-					<h2 data-translate="highlights_title">Highlights</h2>
-					<ul class="highlight-list">
-						<li data-translate="highlight_1">Former “La Caixa” Junior Leader and Marie Curie Fellow at the Autonomous University of Madrid.</li>
-						<li data-translate="highlight_2">Past research appointments at Oxford, the University of São Paulo, and Radboud University Nijmegen.</li>
-						<li data-translate="highlight_3">PhD in Physics from the University of Hamburg, with earlier degrees from the State University of Campinas.</li>
-					</ul>
+				<aside class="profile-sidebar">
+					<div class="profile-photo" role="img" aria-label="Portrait of Rafael Alves Batista"></div>
+					<div class="profile-card">
+						<h2 data-translate="profile_card_title">About me</h2>
+						<p class="profile-card-name">Rafael Alves Batista</p>
+						<p data-translate="profile_card_affiliation_1">Institut d’Astrophysique de Paris</p>
+						<p data-translate="profile_card_affiliation_2">Sorbonne Université</p>
+						<p data-translate="profile_card_location">Paris, France</p>
+						<p><a href="mailto:rafael.alves_batista@iap.fr" class="inline-link">rafael.alves_batista@iap.fr</a></p>
+					</div>
 				</aside>
 			</div>
 		</section>
@@ -59,45 +64,71 @@
 		<section class="section section-alt">
 			<div class="container">
 				<div class="section-header">
-					<p class="eyebrow" data-translate="overview_eyebrow">Site overview</p>
-					<h2 class="section-title" data-translate="overview_title">A clearer structure for the main topics</h2>
-					<p class="section-description" data-translate="overview_description">The site now starts with a landing page and branches into dedicated sections for research and teaching so visitors can move directly to the area they need.</p>
+					<p class="eyebrow" data-translate="education_eyebrow">Academic trajectory</p>
+					<h2 class="section-title" data-translate="education_title">Education</h2>
+					<p class="section-description" data-translate="education_description">Degrees completed at the University of Hamburg and the State University of Campinas.</p>
 				</div>
-				<div class="link-card-grid">
-					<a class="link-card" href="research.html">
-						<h3 data-translate="overview_card_research_title">Research</h3>
-						<p data-translate="overview_card_research_desc">Read about work on cosmic rays, gamma rays, neutrinos, gravitational waves, dark matter, and cosmic magnetic fields.</p>
-						<span class="link-card-action" data-translate="overview_card_action">Open page</span>
-					</a>
-					<a class="link-card" href="teaching.html">
-						<h3 data-translate="overview_card_teaching_title">Teaching</h3>
-						<p data-translate="overview_card_teaching_desc">See course examples, mentoring themes, and Rafael’s interest in science learning beyond the classroom.</p>
-						<span class="link-card-action" data-translate="overview_card_action">Open page</span>
-					</a>
+				<div class="timeline-list education-list">
+					<article class="timeline-item">
+						<p class="timeline-meta">2015</p>
+						<h3 data-translate="education_degree_1_title">PhD in Physics</h3>
+						<p data-translate="education_degree_1_desc">University of Hamburg, Hamburg, Germany.</p>
+					</article>
+					<article class="timeline-item">
+						<p class="timeline-meta">2012</p>
+						<h3 data-translate="education_degree_2_title">MSc in Physics</h3>
+						<p data-translate="education_degree_2_desc">State University of Campinas, Campinas, Brazil.</p>
+					</article>
+					<article class="timeline-item">
+						<p class="timeline-meta">2011</p>
+						<h3 data-translate="education_degree_3_title">Licenciatura in Physics</h3>
+						<p data-translate="education_degree_3_desc">State University of Campinas, Campinas, Brazil.</p>
+					</article>
+					<article class="timeline-item">
+						<p class="timeline-meta">2009</p>
+						<h3 data-translate="education_degree_4_title">BSc in Physics</h3>
+						<p data-translate="education_degree_4_desc">State University of Campinas, Campinas, Brazil.</p>
+					</article>
 				</div>
 			</div>
 		</section>
 
-		<section id="contact" class="section">
+		<section class="section">
 			<div class="container">
 				<div class="section-header">
-					<p class="eyebrow" data-translate="contact_eyebrow">Contact and profile</p>
-					<h2 class="section-title" data-translate="contact_title">Find more information</h2>
-					<p class="section-description" data-translate="contact_description">For a fuller academic profile, publications, and updates, visit the external website and institutional pages.</p>
+					<p class="eyebrow" data-translate="interests_eyebrow">Research profile</p>
+					<h2 class="section-title" data-translate="interests_title">Main research interests</h2>
+					<p class="section-description" data-translate="interests_description">The main themes highlighted on the original academic website.</p>
 				</div>
-				<div class="contact-grid">
-					<div class="info-card">
-						<h3 data-translate="contact_current_role_title">Current role</h3>
-						<p data-translate="contact_current_role_desc">Junior Professor Chair, Institut d’Astrophysique de Paris, Sorbonne Université.</p>
-					</div>
+				<div class="interests-grid">
+					<article class="interest-item"><span class="interest-bullet">➤</span><p data-translate="interest_1">Multimessenger astroparticle physics: cosmic rays, gamma rays, neutrinos, gravitational waves.</p></article>
+					<article class="interest-item"><span class="interest-bullet">➤</span><p data-translate="interest_2">Cosmic magnetic fields: properties, origin and evolution of cosmic magnetic fields.</p></article>
+					<article class="interest-item"><span class="interest-bullet">➤</span><p data-translate="interest_3">Dark matter: indirect searches.</p></article>
+					<article class="interest-item"><span class="interest-bullet">➤</span><p data-translate="interest_4">Structure formation.</p></article>
+					<article class="interest-item"><span class="interest-bullet">➤</span><p data-translate="interest_5">Astrobiology: conditions for life in the universe, habitable zones and epochs.</p></article>
+					<article class="interest-item"><span class="interest-bullet">➤</span><p data-translate="interest_6">Beyond standard model physics: astrophysical and cosmological probes.</p></article>
+					<article class="interest-item"><span class="interest-bullet">➤</span><p data-translate="interest_7">Foundations of physics: the apparent “fine-tuning” of the universe.</p></article>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section section-alt">
+			<div class="container two-column-layout">
+				<div>
+					<p class="eyebrow" data-translate="contact_eyebrow">More information</p>
+					<h2 class="section-title" data-translate="contact_title">Links and current activities</h2>
+					<p class="section-description compact" data-translate="contact_description">For opportunities for students, current activities, publications, and other updates, see the external site.</p>
+				</div>
+				<div class="contact-grid compact-contact-grid">
 					<div class="info-card">
 						<h3 data-translate="contact_external_title">External website</h3>
-						<p><a href="https://www.8rafael.com/" class="inline-link" data-translate="contact_external_link">www.8rafael.com (external)</a></p>
+						<p><a href="https://www.8rafael.com/" class="inline-link" data-translate="contact_external_link">Visit www.8rafael.com</a></p>
 					</div>
 					<div class="info-card">
-						<h3 data-translate="contact_topics_title">Main themes</h3>
-						<p data-translate="contact_topics_desc">Astroparticle physics and cosmology.</p>
+						<h3 data-translate="contact_news_title">News</h3>
+						<p><a href="https://www.8rafael.com/en/news/" class="inline-link" data-translate="contact_news_link">Open the News section</a></p>
 					</div>
+				</div>
 				</div>
 			</div>
 		</section>
