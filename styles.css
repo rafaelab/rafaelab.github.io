@@ -1,14 +1,18 @@
 :root {
 	--primary-color: #c9722c;
-	--accent-color: #2f2925;
+	--accent-color: #282320;
 	--text-color: #3d342d;
 	--text-light: #6f6054;
-	--bg-color: #ffffff;
+	--bg-color: #fcf7f1;
 	--bg-light: #f6eee5;
 	--hero-gradient-start: #fbf4ec;
 	--hero-gradient-mid: #f2deca;
 	--hero-gradient-end: #e0b07f;
 	--border-color: #dcc9b6;
+	--surface-soft: rgba(252, 244, 235, 0.92);
+	--surface-strong: rgba(250, 239, 226, 0.96);
+	--surface-card: rgba(255, 249, 242, 0.92);
+	--footer-text: #e6d0bb;
 	--shadow: 0 10px 30px rgba(47, 41, 37, 0.08);
 	--shadow-lg: 0 16px 40px rgba(47, 41, 37, 0.14);
 	--radius: 18px;
@@ -49,7 +53,7 @@ main {
 	gap: 6px;
 	padding: 6px;
 	border-radius: 999px;
-	background: rgba(255, 255, 255, 0.92);
+	background: var(--surface-soft);
 	backdrop-filter: blur(10px);
 	box-shadow: var(--shadow);
 }
@@ -80,9 +84,9 @@ main {
 	position: sticky;
 	top: 0;
 	z-index: 999;
-	background: rgba(255, 255, 255, 0.95);
+	background: var(--surface-strong);
 	backdrop-filter: blur(10px);
-	border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+	border-bottom: 1px solid rgba(220, 201, 182, 0.85);
 }
 
 .navbar .container {
@@ -248,8 +252,8 @@ main {
 .feature-card,
 .timeline-item,
 .link-card {
-	background: rgba(255, 255, 255, 0.9);
-	border: 1px solid rgba(229, 231, 235, 0.9);
+	background: var(--surface-card);
+	border: 1px solid rgba(220, 201, 182, 0.9);
 	border-radius: var(--radius);
 	box-shadow: var(--shadow);
 }
@@ -378,7 +382,7 @@ main {
 
 .footer {
 	background: var(--accent-color);
-	color: #cbd5e1;
+	color: var(--footer-text);
 	padding: 2rem 0;
 }
 
@@ -409,7 +413,7 @@ main {
 		left: 0;
 		right: 0;
 		padding: 1.2rem 20px 1.6rem;
-		background: rgba(255, 255, 255, 0.98);
+		background: var(--surface-strong);
 		backdrop-filter: blur(10px);
 		border-bottom: 1px solid var(--border-color);
 		flex-direction: column;
