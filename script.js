@@ -28,6 +28,7 @@ const translations = {
         contact_current_role_title: 'Current role',
         contact_current_role_desc: 'Junior Professor Chair, Institut d’Astrophysique de Paris, Sorbonne Université.',
         contact_external_title: 'External website',
+        contact_external_link: 'www.8rafael.com (external)',
         contact_topics_title: 'Main themes',
         contact_topics_desc: 'Astroparticle physics, cosmology, astrobiology, and science education.',
         research_eyebrow: 'Research profile and topics',
@@ -51,7 +52,7 @@ const translations = {
         research_background_desc: 'Before joining Sorbonne Université, Rafael held fellowships and research posts in Madrid, Oxford, São Paulo, and Nijmegen, building an international profile across theory and high-energy astrophysics.',
         research_links_title: 'Further reading',
         research_links_desc: 'More detailed project pages and updates are available on the main academic website.',
-        research_links_action: 'Visit the research archive',
+        research_links_action: 'Visit the research archive (external)',
         teaching_eyebrow: 'Teaching and education profile',
         teaching_title: 'Teaching',
         teaching_description: 'Rafael combines university teaching, supervision, and science communication, with a special interest in how physics and astronomy can be taught in formal and non-formal learning spaces.',
@@ -72,7 +73,7 @@ const translations = {
         teaching_links_title: 'More teaching details',
         teaching_links_desc: 'The full academic site includes more context on teaching and related projects in science education.',
         teaching_links_box_title: 'External page',
-        teaching_links_action: 'Open the teaching page',
+        teaching_links_action: 'Open the teaching page (external)',
         footer_rights: 'All rights reserved.'
     },
     pt: {
@@ -104,6 +105,7 @@ const translations = {
         contact_current_role_title: 'Função atual',
         contact_current_role_desc: 'Junior Professor Chair, Institut d’Astrophysique de Paris, Sorbonne Université.',
         contact_external_title: 'Site externo',
+        contact_external_link: 'www.8rafael.com (externo)',
         contact_topics_title: 'Temas principais',
         contact_topics_desc: 'Astrofísica de partículas, cosmologia, astrobiologia e educação em ciências.',
         research_eyebrow: 'Perfil e temas de pesquisa',
@@ -127,7 +129,7 @@ const translations = {
         research_background_desc: 'Antes de ingressar na Sorbonne Université, Rafael ocupou bolsas e cargos de pesquisa em Madri, Oxford, São Paulo e Nijmegen, construindo um perfil internacional em teoria e astrofísica de altas energias.',
         research_links_title: 'Leitura complementar',
         research_links_desc: 'Páginas mais detalhadas de projetos e atualizações estão disponíveis no site acadêmico principal.',
-        research_links_action: 'Visitar o arquivo de pesquisa',
+        research_links_action: 'Visitar o arquivo de pesquisa (externo)',
         teaching_eyebrow: 'Perfil de ensino e educação',
         teaching_title: 'Ensino',
         teaching_description: 'Rafael combina ensino universitário, orientação e comunicação científica, com interesse especial em como física e astronomia podem ser ensinadas em espaços formais e não formais de aprendizagem.',
@@ -148,7 +150,7 @@ const translations = {
         teaching_links_title: 'Mais detalhes sobre o ensino',
         teaching_links_desc: 'O site acadêmico completo traz mais contexto sobre o ensino e projetos relacionados à educação em ciências.',
         teaching_links_box_title: 'Página externa',
-        teaching_links_action: 'Abrir a página de ensino',
+        teaching_links_action: 'Abrir a página de ensino (externo)',
         footer_rights: 'Todos os direitos reservados.'
     }
 };
