@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Rafael A. B.">
-    <title>Rafael A. B. | Personal Website</title>
+    <meta name="description" content="Personal website of Rafael Alves Batista.">
+    <title>Rafael Alves Batista | Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Language Switcher -->
+<body data-page="home">
     <div class="language-switcher">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="pt">PT</button>
     </div>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="#home" class="logo-link">Rafael A. B.</a>
+                <a href="index.html" class="logo-link">Rafael Alves Batista</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link" data-translate="nav_home">Home</a></li>
-                <li><a href="#research" class="nav-link" data-translate="nav_research">Research</a></li>
-                <li><a href="#teaching" class="nav-link" data-translate="nav_teaching">Teaching</a></li>
-                <li><a href="#publications" class="nav-link" data-translate="nav_publications">Publications</a></li>
+                <li><a href="index.html" class="nav-link" data-nav="home" data-translate="nav_home">Home</a></li>
+                <li><a href="research.html" class="nav-link" data-nav="research" data-translate="nav_research">Research</a></li>
+                <li><a href="teaching.html" class="nav-link" data-nav="teaching" data-translate="nav_teaching">Teaching</a></li>
                 <li><a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,141 +32,80 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section home-section">
-        <div class="container">
-            <div class="home-content">
-                <h1 class="main-title" data-translate="home_title">Welcome to My Website</h1>
-                <p class="subtitle" data-translate="home_subtitle">Researcher & Educator</p>
-                <p class="description" data-translate="home_description">
-                    I am a researcher passionate about advancing knowledge and sharing it with others. 
-                    This website showcases my academic work, research interests, and teaching activities.
-                </p>
-                <div class="cta-buttons">
-                    <a href="#research" class="btn btn-primary" data-translate="home_cta_research">View My Research</a>
-                    <a href="#contact" class="btn btn-secondary" data-translate="home_cta_contact">Get in Touch</a>
+    <main>
+        <section class="hero hero-home">
+            <div class="container hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow" data-translate="home_eyebrow">Astroparticle physicist and educator</p>
+                    <h1 class="main-title" data-translate="home_title">Rafael Alves Batista</h1>
+                    <p class="subtitle" data-translate="home_subtitle">Junior Professor Chair at the Institut d’Astrophysique de Paris, Sorbonne Université</p>
+                    <p class="description" data-translate="home_description">Rafael works across astroparticle physics, cosmology, and science education, with research spanning multimessenger astronomy, cosmic magnetic fields, dark matter, and the conditions that make life possible in the universe.</p>
+                    <div class="cta-buttons">
+                        <a href="research.html" class="btn btn-primary" data-translate="home_cta_research">Explore research</a>
+                        <a href="teaching.html" class="btn btn-secondary" data-translate="home_cta_teaching">View teaching</a>
+                    </div>
+                </div>
+                <aside class="highlight-panel">
+                    <h2 data-translate="highlights_title">Highlights</h2>
+                    <ul class="highlight-list">
+                        <li data-translate="highlight_1">Former “La Caixa” Junior Leader and Marie Curie Fellow at the Autonomous University of Madrid.</li>
+                        <li data-translate="highlight_2">Past research appointments at Oxford, the University of São Paulo, and Radboud University Nijmegen.</li>
+                        <li data-translate="highlight_3">PhD in Physics from the University of Hamburg, with earlier degrees from the State University of Campinas.</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow" data-translate="overview_eyebrow">Site overview</p>
+                    <h2 class="section-title" data-translate="overview_title">A clearer structure for the main topics</h2>
+                    <p class="section-description" data-translate="overview_description">The site now starts with a landing page and branches into dedicated sections for research and teaching so visitors can move directly to the area they need.</p>
+                </div>
+                <div class="link-card-grid">
+                    <a class="link-card" href="research.html">
+                        <h3 data-translate="overview_card_research_title">Research</h3>
+                        <p data-translate="overview_card_research_desc">Read about work on cosmic rays, gamma rays, neutrinos, gravitational waves, dark matter, and cosmic magnetic fields.</p>
+                        <span class="link-card-action" data-translate="overview_card_action">Open page</span>
+                    </a>
+                    <a class="link-card" href="teaching.html">
+                        <h3 data-translate="overview_card_teaching_title">Teaching</h3>
+                        <p data-translate="overview_card_teaching_desc">See course examples, mentoring themes, and Rafael’s interest in science learning beyond the classroom.</p>
+                        <span class="link-card-action" data-translate="overview_card_action">Open page</span>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Research Section -->
-    <section id="research" class="section research-section">
-        <div class="container">
-            <h2 class="section-title" data-translate="research_title">Research</h2>
-            <p class="section-description" data-translate="research_description">
-                My research focuses on various topics within my field. Below are some of my current research areas and projects.
-            </p>
-            
-            <div class="research-grid">
-                <div class="research-card">
-                    <h3 data-translate="research_area1_title">Research Area 1</h3>
-                    <p data-translate="research_area1_desc">Description of your first research area and ongoing projects.</p>
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow" data-translate="contact_eyebrow">Contact and profile</p>
+                    <h2 class="section-title" data-translate="contact_title">Find more information</h2>
+                    <p class="section-description" data-translate="contact_description">For a fuller academic profile, publications, and updates, visit the external website and institutional pages.</p>
                 </div>
-                <div class="research-card">
-                    <h3 data-translate="research_area2_title">Research Area 2</h3>
-                    <p data-translate="research_area2_desc">Description of your second research area and key findings.</p>
-                </div>
-                <div class="research-card">
-                    <h3 data-translate="research_area3_title">Research Area 3</h3>
-                    <p data-translate="research_area3_desc">Description of your third research area and future directions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Teaching Section -->
-    <section id="teaching" class="section teaching-section">
-        <div class="container">
-            <h2 class="section-title" data-translate="teaching_title">Teaching</h2>
-            <p class="section-description" data-translate="teaching_description">
-                I am committed to education and have taught various courses at different levels.
-            </p>
-            
-            <div class="teaching-list">
-                <div class="teaching-item">
-                    <h3 data-translate="teaching_course1_title">Course 1</h3>
-                    <p class="course-level" data-translate="teaching_course1_level">Undergraduate Level</p>
-                    <p data-translate="teaching_course1_desc">Description of the course content and learning objectives.</p>
-                </div>
-                <div class="teaching-item">
-                    <h3 data-translate="teaching_course2_title">Course 2</h3>
-                    <p class="course-level" data-translate="teaching_course2_level">Graduate Level</p>
-                    <p data-translate="teaching_course2_desc">Description of the course content and learning objectives.</p>
-                </div>
-                <div class="teaching-item">
-                    <h3 data-translate="teaching_course3_title">Course 3</h3>
-                    <p class="course-level" data-translate="teaching_course3_level">Workshop/Seminar</p>
-                    <p data-translate="teaching_course3_desc">Description of the workshop or seminar topics.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section publications-section">
-        <div class="container">
-            <h2 class="section-title" data-translate="publications_title">Publications</h2>
-            <p class="section-description" data-translate="publications_description">
-                Selected publications and academic contributions.
-            </p>
-            
-            <div class="publications-list">
-                <div class="publication-item">
-                    <h3 data-translate="publication1_title">Publication Title 1</h3>
-                    <p class="publication-authors" data-translate="publication1_authors">Authors</p>
-                    <p class="publication-venue" data-translate="publication1_venue">Journal/Conference Name, Year</p>
-                    <a href="#" class="publication-link" data-translate="publication_link">View Paper</a>
-                </div>
-                <div class="publication-item">
-                    <h3 data-translate="publication2_title">Publication Title 2</h3>
-                    <p class="publication-authors" data-translate="publication2_authors">Authors</p>
-                    <p class="publication-venue" data-translate="publication2_venue">Journal/Conference Name, Year</p>
-                    <a href="#" class="publication-link" data-translate="publication_link">View Paper</a>
-                </div>
-                <div class="publication-item">
-                    <h3 data-translate="publication3_title">Publication Title 3</h3>
-                    <p class="publication-authors" data-translate="publication3_authors">Authors</p>
-                    <p class="publication-venue" data-translate="publication3_venue">Journal/Conference Name, Year</p>
-                    <a href="#" class="publication-link" data-translate="publication_link">View Paper</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h2 class="section-title" data-translate="contact_title">Contact</h2>
-            <p class="section-description" data-translate="contact_description">
-                Feel free to reach out for collaborations, questions, or opportunities.
-            </p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3 data-translate="contact_email">Email</h3>
-                    <p>your.email@example.com</p>
-                </div>
-                <div class="contact-item">
-                    <h3 data-translate="contact_office">Office</h3>
-                    <p data-translate="contact_office_location">Your Office Location</p>
-                </div>
-                <div class="contact-item">
-                    <h3 data-translate="contact_social">Social Media</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link">GitHub</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">Twitter</a>
+                <div class="contact-grid">
+                    <div class="info-card">
+                        <h3 data-translate="contact_current_role_title">Current role</h3>
+                        <p data-translate="contact_current_role_desc">Junior Professor Chair, Institut d’Astrophysique de Paris, Sorbonne Université.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3 data-translate="contact_external_title">External website</h3>
+                        <p><a href="https://www.8rafael.com/" class="inline-link">www.8rafael.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <h3 data-translate="contact_topics_title">Main themes</h3>
+                        <p data-translate="contact_topics_desc">Astroparticle physics, cosmology, astrobiology, and science education.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> Rafael A. B. <span data-translate="footer_rights">All rights reserved.</span></p>
+            <p>&copy; <span id="year"></span> Rafael Alves Batista. <span data-translate="footer_rights">All rights reserved.</span></p>
         </div>
     </footer>
 
