@@ -1,6 +1,5 @@
 :root {
 	--primary-color: #D28538;
-	--secondary-color: #D28538;
 	--accent-color: #0f172a;
 	--text-color: #1f2937;
 	--text-light: #6b7280;
@@ -230,8 +229,8 @@ main {
 }
 
 .btn-primary:hover {
-	background: var(--secondary-color);
-	border-color: var(--secondary-color);
+	background: var(--primary-color);
+	border-color: var(--primary-color);
 }
 
 .btn-secondary {

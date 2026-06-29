@@ -7,22 +7,25 @@ Personal website for Rafael Alves Batista, hosted on GitHub Pages.
 - **Multilingual Support**: Switch between English and Portuguese
 - **Responsive Design**: Mobile-friendly layout that works on all devices
 - **Multi-page Structure**:
-  - `index.html`: Landing page and profile overview
-  - `research.html`: Dedicated research page
-  - `teaching.html`: Dedicated teaching page
+	- `index.html`: Landing page and profile overview
+	- `research.html`: Dedicated research page
+	- `teaching.html`: Dedicated teaching page
 
 ## How to Customize
 
 ### Update Content
 
 1. **Edit the page files**:
-   - Update `index.html` for the landing page summary and contact/profile cards
-   - Update `research.html` for research topics and background
-   - Update `teaching.html` for courses, mentoring, and outreach content
+	- Update `index.html` for the landing page summary and contact/profile cards
+	- Update `research.html` for research topics and background
+	- Update `teaching.html` for courses, mentoring, and outreach content
 
 2. **Edit `script.js`**:
-   - Modify the `translations` object to update text content in both languages
-   - Add or remove translation keys as needed for `en` and `pt`
+	- Modify the `translations` object to update text content in both languages
+	- Add or remove translation keys as needed for `en` and `pt`
+
+3. **Keep formatting consistent**:
+	- The repository uses tabs via `.editorconfig`
 
 ### Add More Languages
 
